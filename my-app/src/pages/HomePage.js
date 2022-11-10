@@ -3,7 +3,7 @@ import Search from '../components/Search'
 import CharacterCard from '../components/CharacterCard'
 import '../styles/home.css';
 
-function HomePage({characters},{setCharacters}) {
+function HomePage({characters,setCharacters}) {
   return (
     <div>
       <Search setCharacters={setCharacters}/>
