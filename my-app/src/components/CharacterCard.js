@@ -1,12 +1,15 @@
-import React from 'react';
+import React,{useContext} from 'react'
 import '../styles/character.css';
+import { Link } from 'react-router-dom';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 function CharacterCard({character}) {
+  const {darkMode,setDarkMode}=useContext(ThemeContext)
   return (
-    <div className='character-card'>
+    <div className={darkMode ? "character-container character-dark ":"character-card"}>
         <img src={character.image}/>
         <p>{character.name}</p>
-        <a href={`/details/${character.id}`}><button>See Details</button></a>
+        <Link to={`/details/${character.id}`}><button>See Details</button></Link>
     </div>
   )
 }
