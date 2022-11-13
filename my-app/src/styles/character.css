@@ -62,3 +62,7 @@
     cursor:pointer;
 }
 
+.details-dark{
+    background-color: black;
+    color:white;
+}

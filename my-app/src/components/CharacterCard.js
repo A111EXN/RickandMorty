@@ -6,7 +6,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 function CharacterCard({character}) {
   const {darkMode,setDarkMode}=useContext(ThemeContext)
   return (
-    <div className={darkMode ? "character-container character-dark ":"character-card"}>
+    <div className={darkMode ? "character-card character-dark ":"character-card"}>
         <img src={character.image}/>
         <p>{character.name}</p>
         <Link to={`/details/${character.id}`}><button>See Details</button></Link>
