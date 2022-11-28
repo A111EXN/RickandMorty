@@ -13,11 +13,11 @@ function Header() {
   return (
     <div className= {darkMode ? "header-container header-dark" : "header-container"}>
       <div>
-       <Link style={{marginRight:"7px"}} to='/'>Home</Link>
+       <Link style={{marginRight:"20px"}} to='/'>Home</Link>
        <Link style={{marginRight:"7px"}} to='/about'>About</Link>
       </div>
       <div style={{display:"flex"}}>
-       <p style={{marginRight:"7px"}}>Welcome {userName}</p>
+       <p style={{marginRight:"20px"}}>Welcome {userName}</p>
        <button onClick={()=>setDarkMode(!darkMode)}> {darkMode ? "Light Mode" : "Dark Mode"} </button>
       </div>
     </div>
